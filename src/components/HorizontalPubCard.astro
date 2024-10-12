@@ -1,0 +1,35 @@
+---
+const { title, author, pubDate, booktitle, publisher, publishyear, pdf_link } = Astro.props;
+import { Image } from "astro:assets";
+---
+
+<div
+  class="rounded-lg bg-base-100"
+>
+  <!-- <a href={url} target={target}> -->
+    <div class="hero-content flex-col md:flex-row">
+      <div class="grow w-full">
+        <h1 class="text-xl font-bold">
+          {title}
+        </h1>
+        <p class="py-1 text-1xl">{author}</p>
+        <p class="py-1 text-1xl italic">{booktitle}. {publisher}, {publishyear}</p>
+
+        <div class="card-actions justify-end">
+          {pdf_link && 
+            <a href={pdf_link} class="badge badge-outline">PDF</a>
+          }
+          <!-- {
+            tags &&
+              tags.map((tag) => (
+                // <a href={`${tag_url}/${tag}`} class="badge badge-outline">
+                //   {tag}
+                // </a>
+                {tag}
+              ))
+          } -->
+        </div>
+      </div>
+    </div>
+  <!-- </a> -->
+</div>

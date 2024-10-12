@@ -9,8 +9,12 @@ const { title, subtitle, subinfo } = Astro.props;
   </div>
   <div class="experience__data bd-grid px-5">
     <h3 class="font-semibold mb-1">{title}</h3>
-    <span class="ffont-semibold text-sm">{subtitle}<br /></span>
-    <span class="font-light text-sm">{subinfo}</span>
+    {subtitle && 
+      <span class="ffont-semibold text-sm">{subtitle}<br /></span>
+    }
+    {subinfo && 
+      <span class="font-light text-sm">{subinfo}</span>
+    }
     <p class="my-2 text-justify">
       <slot />
     </p>
