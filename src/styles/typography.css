@@ -1,0 +1,113 @@
+/* Special thanks to this tool for local fonts CSS generation:
+  https://google-webfonts-helper.herokuapp.com/fonts/lato?subsets=latin
+*/
+
+/* lato-300 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(''),
+       url('/assets/fonts/lato-v23-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/assets/fonts/lato-v23-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+       url('/assets/fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/assets/fonts/lato-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('/assets/fonts/lato-v23-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/assets/fonts/lato-v23-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700italic - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('/assets/fonts/lato-v23-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/assets/fonts/lato-v23-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+:root {
+  --font-size-sm: clamp(10.4px, 0.07vw + 10.13px, 11px);
+  --font-size-base: clamp(14px, 0.23vw + 13.09px, 16px);
+  --font-size-md: clamp(18.5px, 0.47vw + 16.61px, 22.66px);
+  --font-size-lg: clamp(24.13px, 0.84vw + 20.76px, 31.54px);
+  --font-size-xl: clamp(31.16px, 1.39vw + 25.6px, 43.37px);
+  --font-size-xxl: clamp(39.95px, 2.18vw + 31.22px, 59.15px);
+  --font-size-xxxl: clamp(50.93px, 3.32vw + 37.64px, 80.17px);
+}
+
+html,
+body {
+	line-height: 1.5;
+	font-family: var(--theme-font-family-sans);
+	font-size: var(--font-size-base);
+	color: var(--theme-on-bg);
+} 
+
+h1,
+h2,
+h3 {
+	font-family: var(--theme-font-family-sans);
+	font-weight: 700;
+}
+
+h1 {
+	font-size: var(--font-size-xxl);
+}
+
+h2 {
+	font-size: var(--font-size-xl);
+}
+
+h3 {
+	font-size: var(--font-size-lg);
+}
+
+h1,
+h2 {
+	line-height: 1.1;
+	font-weight: 700;
+}
+
+h3 {
+	font-weight: 500;
+}
+
+h6 {
+	font-size: var(--font-size-sm);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0 0 1rem 0;
+}
+
+blockquote {
+	font-style: italic;
+	font-size: var(--font-size-base);
+	font-weight: 500;
+	margin-bottom: 1rem;
+	padding-left: 1.5rem;
+	border-left: 0.25rem solid var(--theme-on-bg);
+}

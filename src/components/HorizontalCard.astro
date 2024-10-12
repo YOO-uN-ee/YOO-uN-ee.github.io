@@ -1,5 +1,5 @@
 ---
-const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
+const { title, desc, url, badge, tags, target = "_blank" } = Astro.props;
 import { Image } from "astro:assets";
 const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
 ---
@@ -7,9 +7,9 @@ const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
 <div
   class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]"
 >
-  <a href={url} target={target}>
+  <!-- <a href={url} target={target}> -->
     <div class="hero-content flex-col md:flex-row">
-      {
+      <!-- {
         img && (
           <Image
             src={img}
@@ -20,7 +20,7 @@ const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
             class="max-w-full md:max-w-[13rem] rounded-lg"
           />
         )
-      }
+      } -->
       <div class="grow w-full">
         <h1 class="text-xl font-bold">
           {title}
@@ -39,5 +39,5 @@ const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
         </div>
       </div>
     </div>
-  </a>
+  <!-- </a> -->
 </div>
