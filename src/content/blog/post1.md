@@ -1,6 +1,6 @@
 ---
 title: "[Sept 2024]"
-description: "My paper is accepted to GeoAI'24!"
+description: "My paper is accepted to GeoAI'24 🌎"
 pubDate: "Sept 19 2022"
 tags: ["tokio"]
 ---
